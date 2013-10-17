@@ -1,0 +1,23 @@
+﻿<STADIUM_CATALOG>
+  <STADIUM>
+    <NAME>Memorial Stadium</NAME>
+    <SCHOOL>Illinois</SCHOOL>
+    <LATITUDE>40.099167</LATITUDE>
+    <LONGITUDE>-88.235833</LONGITUDE>
+    <URL>http://www.fightingillini.com/sports/m-footbl/ill-m-footbl-body.html</URL>
+  </STADIUM>
+  <STADIUM>
+    <NAME>Ryan Field</NAME>
+    <SCHOOL>Northwestern</SCHOOL>
+    <LATITUDE>42.065556</LATITUDE>
+    <LONGITUDE>-87.6925</LONGITUDE>
+    <URL>http://www.nusports.com/sports/m-footbl/</URL>
+  </STADIUM>
+  <STADIUM>
+    <NAME>Camp Randall Stadium</NAME>
+    <SCHOOL>Wisconsin</SCHOOL>
+    <LATITUDE>43.07</LATITUDE>
+    <LONGITUDE>-89.412778</LONGITUDE>
+    <URL>http://www.uwbadgers.com/sports/m-footbl/</URL>
+  </STADIUM>
+</STADIUM_CATALOG>

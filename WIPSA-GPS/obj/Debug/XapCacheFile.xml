@@ -1,0 +1,14 @@
+﻿<xapCache source="C:\Users\Michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\Bin\Debug\WIPSA_GPS_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="10/17/2013 4:56:28 PM">
+  <file source="C:\Users\Michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\obj\Debug\WIPSA-GPS.dll" archivePath="WIPSA-GPS.dll" lastWriteTime="10/17/2013 4:56:27 PM" />
+  <file source="C:\Users\Michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="10/16/2013 3:32:39 PM" />
+  <file source="C:\Users\Michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="10/16/2013 3:32:39 PM" />
+  <file source="C:\Users\Michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="10/16/2013 3:32:39 PM" />
+  <file source="C:\Users\Michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="10/16/2013 3:32:39 PM" />
+  <file source="C:\Users\Michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="10/16/2013 3:32:39 PM" />
+  <file source="C:\Users\Michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\Assets\stadium_catalog.xml" archivePath="Assets\stadium_catalog.xml" lastWriteTime="10/17/2013 2:25:24 PM" />
+  <file source="C:\Users\Michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="10/16/2013 10:22:07 PM" />
+  <file source="C:\Users\Michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="10/16/2013 3:32:39 PM" />
+  <file source="C:\Users\Michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="10/16/2013 3:32:39 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="3/3/2013 6:40:38 PM" />
+  <file source="C:\Users\Michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="10/16/2013 3:41:18 PM" />
+</xapCache>
