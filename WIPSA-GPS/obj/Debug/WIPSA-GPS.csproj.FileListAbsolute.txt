@@ -19,3 +19,47 @@ c:\users\michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\obj\D
 c:\users\michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\obj\Debug\XapCacheFile.xml
 C:\Users\Michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\obj\Debug\WIPSA-GPS.csprojResolveAssemblyReference.cache
 C:\Users\Michael\documents\visual studio 2012\Projects\WIPSA-GPS\WIPSA-GPS\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\WIPSA-GPS.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\WIPSA-GPS.pdb
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\AppManifest.xaml
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\WIPSA_GPS_Debug_AnyCPU.xap
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\obj\Debug\App.g.cs
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\obj\Debug\WIPSA-GPS.g.resources
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\obj\Debug\WIPSA_GPS.Resources.AppResources.resources
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\obj\Debug\WIPSA-GPS.csproj.GenerateResource.Cache
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\obj\Debug\WIPSA-GPS.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\obj\Debug\WIPSA-GPS.pdb
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\obj\Debug\XapCacheFile.xml
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\obj\Debug\MainPage.g.cs
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\obj\Debug\gpsPage.g.cs
+C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\obj\Debug\voPage.g.cs

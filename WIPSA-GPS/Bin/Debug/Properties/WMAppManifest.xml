@@ -2,7 +2,7 @@
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
   <App xmlns="" ProductID="{9484372d-a85e-4250-83e4-ddf23a263b86}" Title="WIPSA_GPS" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="WIPSA_GPS author" Description="Sample description" Publisher="WIPSA_GPS" PublisherID="{3c4e703c-a542-4f0d-9c54-308a82eaa2fb}">
-    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+    <IconPath IsRelative="true" IsResource="false">c8d2a251-5bac-460b-9f03-7258bcdd1c15.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
@@ -11,6 +11,7 @@
       <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
       <Capability Name="ID_CAP_LOCATION" />
       <Capability Name="ID_CAP_MAP" />
+      <Capability Name="ID_CAP_ISV_CAMERA" />
     </Capabilities>
     <Tasks>
       <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
