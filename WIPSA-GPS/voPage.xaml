@@ -15,23 +15,52 @@
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
-        <!--ContentPanel - place additional content here-->
+        
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0">
+            <!--Overlay for the viewfinder region to display grayscale WriteableBitmap objects-->
+            <Image x:Name="MainImage" Width="320" Height="240" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="16,0,0,16" Stretch="Uniform" >
+                
+            </Image>
+
+
             <Rectangle Width="640" Height="480" Canvas.ZIndex="1">
                 <Rectangle.Fill>
                     <VideoBrush x:Name="viewfinderBrush" />
                 </Rectangle.Fill>
+               
+                
                 <Rectangle.RenderTransform>
                     <RotateTransform Angle="90" CenterX="240" CenterY="240"></RotateTransform>
                 </Rectangle.RenderTransform>
             </Rectangle>
+            
+            
+            <!--Button StackPanel to the right of viewfinder>-->
+            <!--<StackPanel Grid.Column="1" >
+                <Button x:Name="ShutterButton" Content="capture" Click="ShutterButton_Click" FontSize="26" FontWeight="ExtraBold" Height="75" />
+            </StackPanel>-->
+            <!--Button StackPanel to the right of viewfinder>-->
+            
+            <StackPanel Grid.Column="1" >
+                <Button              
+                Content="Gray: ON" 
+                Name="GrayscaleOnButton"   
+                Click="GrayOn_Clicked" />
+                <Button              
+                Content="Gray: OFF" 
+                Name="GrayscaleOffButton"   
+                Click="GrayOff_Clicked" />
+            </StackPanel>
+
             <Canvas Name="TextBoxCanvas" Background="#BB000000" Canvas.ZIndex="99" Visibility="Collapsed">
                 <!--<TextBlock Text="name this point" Margin="20,130,0,0"/>
             <TextBox Height="72" HorizontalAlignment="Left" Margin="8,160,0,0" Name="NameTextBox"  VerticalAlignment="Top" Width="460" KeyUp="NameTextBox_KeyUp" />
             -->
+            <TextBlock Height="40" HorizontalAlignment="Left" Margin="8,428,0,0" Name="txtDebug" VerticalAlignment="Top" Width="626" FontSize="24" FontWeight="ExtraBold" />
+
             </Canvas>
         </Grid>
-        <!--<DrawingSurfaceBackgroundGrid HorizontalAlignment="Left" Height="100" Margin="155,115,0,0" VerticalAlignment="Top" Width="100"/>-->
+        
     </Grid>
 
 </phone:PhoneApplicationPage>
