@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\x86\Debug\WIPSA_GPS_Debug_x86.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="10/18/2013 5:03:27 AM">
-  <file source="C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\obj\x86\Debug\WIPSA-GPS.dll" archivePath="WIPSA-GPS.dll" lastWriteTime="10/18/2013 5:03:26 AM" />
+﻿<xapCache source="C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\x86\Debug\WIPSA_GPS_Debug_x86.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="12/3/2013 9:25:32 PM">
+  <file source="C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\obj\x86\Debug\WIPSA-GPS.dll" archivePath="WIPSA-GPS.dll" lastWriteTime="12/1/2013 10:44:21 PM" />
   <file source="C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="10/17/2013 6:35:31 PM" />
   <file source="C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="10/17/2013 6:35:31 PM" />
   <file source="C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="10/17/2013 6:35:31 PM" />
@@ -15,5 +15,5 @@
   <file source="C:\Users\Pascal\Documents\GitHub\498MA\Debug\WIPSA-GPS.PhoneComponent\WIPSA_GPS_PhoneComponent.winmd" archivePath="WIPSA_GPS_PhoneComponent.winmd" lastWriteTime="10/18/2013 4:58:07 AM" />
   <file source="C:\Users\Pascal\Documents\GitHub\498MA\Debug\WIPSA-GPS.PhoneComponent\WIPSA-GPS.PhoneComponent.dll" archivePath="WIPSA-GPS.PhoneComponent.dll" lastWriteTime="10/18/2013 4:58:07 AM" />
   <file source="C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\c8d2a251-5bac-460b-9f03-7258bcdd1c15.png" archivePath="c8d2a251-5bac-460b-9f03-7258bcdd1c15.png" lastWriteTime="10/17/2013 6:35:31 PM" />
-  <file source="C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\x86\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="10/18/2013 5:03:27 AM" />
+  <file source="C:\Users\Pascal\Documents\GitHub\498MA\WIPSA-GPS\Bin\x86\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="12/3/2013 9:25:32 PM" />
 </xapCache>
