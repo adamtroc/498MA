@@ -414,20 +414,33 @@ namespace WIPSA_GPS
             try
             {
                 PhotoCamera phCam = (PhotoCamera)cam;
+                int width = (int)cam.PreviewResolution.Width;
+                int height = (int)cam.PreviewResolution.Height;
 
                 while (pumpARGBFrames)
                 {
                     pauseFramesEvent.WaitOne();
-
+                    
                     // Copies the current viewfinder frame into a buffer for further manipulation. 
                     phCam.GetPreviewBufferArgb32(ARGBPx);
 
                     // Conversion to grayscale. 
-                    for (int i = 0; i < ARGBPx.Length; i++)
-                    {
-                        ARGBPx[i] = ColorToGray(ARGBPx[i]);
-                    }
+                    int p1x = 40; int p1y = 20; int p2x = 120; int p2y = 90; int size = 10;
 
+                    for (int i = 0; i < width; i++)
+                    {
+                        for (int j = 0; j < height; j++)
+                        {
+                            shader(ARGBPx, i, j, p1x, p1y, p2x, p2y, size, width, height);
+                        }
+                    }
+                    for (int i = 0; i < width; i++)
+                    {
+                        for (int j = 0; j < height; j++)
+                        {
+                            shader(ARGBPx, i, j, p1x, p1y, p2x, p2y, size, width, height);
+                        }
+                    }
                     pauseFramesEvent.Reset();
                     Deployment.Current.Dispatcher.BeginInvoke(delegate()
                     {
@@ -472,15 +485,60 @@ namespace WIPSA_GPS
                 gray = ((a & 0xFF) << 24) | ((i & 0xFF) << 16) | ((i & 0xFF) << 8) | (i & 0xFF);
             }
             return gray;
-        } 
+        }
+
+        internal void shader(int[] img, int x, int y, int p1x, int p1y, int p2x, int p2y, int size, int resWidth, int resHeight)
+        {
+            const int yellow = -256; //0xffffff00;
+
+            int d1 = (x - p1x) * (x - p1x) + (y - p1y) * (y - p1y);
+            int d2 = (x - p2x) * (x - p2x) + (y - p2y) * (y - p2y);
+
+            if (size * size > d1 || size * size > d2) // if it's within the circles of the endpts
+            {
+                img[y * resWidth + x] = yellow;
+                return;
+            }
+
+
+            else
+            {
+                if (p1x > p2x) // force p1 to left side of p2
+                {
+                    int tempx = p2x; int tempy = p2y;
+                    p2x = p1x; p2y = p1y;
+                    p1x = tempx; p1y = tempy;
+                }
+
+                if (x > p1x && x < p2x) // if x is between
+                {
+                    float dx = (float)(x - p1x) / (float)(p2x - p1x);
+                    int ly = (int)(dx * (p2y - p1y)) + p1y;
+                    if (abs(ly - y) < size)
+                    {
+                        img[y * resWidth + x] = yellow;
+                        return;
+                    }
+                }
+            }
+            return;
+        }
+
+        int abs(int a)
+        {
+            if (a < 0)
+                return -a;
+            return a;
+        }
 
         private void GrayOn_Clicked(object sender, RoutedEventArgs e) 
         { 
-            MainImage.Visibility = Visibility.Visible; 
+            MainImage.Visibility = Visibility.Visible;
+            MainImage.RenderTransform = new RotateTransform() { Angle = 0, CenterX = 0.5, CenterY = 0.5 };
             pumpARGBFrames = true; 
             ARGBFramesThread = new System.Threading.Thread(PumpARGBFrames); 
  
-            wb = new WriteableBitmap((int)cam.PreviewResolution.Width, (int)cam.PreviewResolution.Height); 
+            wb = new WriteableBitmap((int)cam.PreviewResolution.Width, (int)cam.PreviewResolution.Height);
             this.MainImage.Source = wb; 
  
             // Start pump. 
