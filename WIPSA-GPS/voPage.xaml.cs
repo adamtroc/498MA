@@ -20,6 +20,16 @@ using Matrix = Microsoft.Xna.Framework.Matrix;
 using WIPSA_GPS_PhoneComponent;
 using System.IO;
 
+// added upon touch activation
+using Microsoft.Phone.Tasks;
+using WIPSA_GPS.Resources;
+using System.Device.Location;
+using Windows.Devices.Geolocation;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Controls.Primitives;
+using Windows.ApplicationModel;
+
 // Directives 
 using Microsoft.Devices;
 using System.Windows.Media.Imaging;
@@ -49,8 +59,12 @@ namespace WIPSA_GPS
         private Thread ARGBFramesThread;
         private bool pumpARGBFrames; 
 
-        private static ManualResetEvent pauseFramesEvent = new ManualResetEvent(true); 
+        private static ManualResetEvent pauseFramesEvent = new ManualResetEvent(true);
 
+
+        double[,] coord_array = new double[4, 2];
+        int count = 0;
+        Popup my_popup_cs = new Popup();
 
 
 
@@ -60,17 +74,24 @@ namespace WIPSA_GPS
 
             // Initialize the list of TextBlock and Vector3 objects. 
             textBlocks = new List<TextBlock>();
-            points = new List<Vector3>(); 
+            points = new List<Vector3>();
+            Touch.FrameReported += new TouchFrameEventHandler(OnFrameReported);
         }
- 
+
+        
         public void InitializeViewport() 
         { 
             // Initialize the viewport and matrixes for 3d projection. 
             viewport = new Rectangle(0, 0, (int)this.ActualWidth, (int)this.ActualHeight); 
             float aspect = viewport.Height / viewport.Width; 
             projection = Matrix.CreatePerspectiveFieldOfView(1, aspect, 1, 12); 
-            view = Matrix.CreateLookAt(new Vector3(0, 0, 1), Vector3.Zero, Vector3.Up); 
-        } 
+            view = Matrix.CreateLookAt(new Vector3(0, 0, 1), Vector3.Zero, Vector3.Up);
+
+            MessageBox.Show("Tap the 4 corners of the field"); 
+            //display_cspopup();
+        }
+
+
  
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e) 
         {
@@ -424,16 +445,9 @@ namespace WIPSA_GPS
                     // Copies the current viewfinder frame into a buffer for further manipulation. 
                     phCam.GetPreviewBufferArgb32(ARGBPx);
 
-                    // Conversion to grayscale. 
+                    // Conversion through shader. 
                     int p1x = 40; int p1y = 20; int p2x = 120; int p2y = 90; int size = 10;
 
-                    for (int i = 0; i < width; i++)
-                    {
-                        for (int j = 0; j < height; j++)
-                        {
-                            shader(ARGBPx, i, j, p1x, p1y, p2x, p2y, size, width, height);
-                        }
-                    }
                     for (int i = 0; i < width; i++)
                     {
                         for (int j = 0; j < height; j++)
@@ -447,7 +461,7 @@ namespace WIPSA_GPS
                         // Copy to WriteableBitmap. 
                         ARGBPx.CopyTo(wb.Pixels, 0);
                         wb.Invalidate();
-
+                        
                         pauseFramesEvent.Set();
                     });
                 }
@@ -534,13 +548,16 @@ namespace WIPSA_GPS
         private void GrayOn_Clicked(object sender, RoutedEventArgs e) 
         { 
             MainImage.Visibility = Visibility.Visible;
-            MainImage.RenderTransform = new RotateTransform() { Angle = 0, CenterX = 0.5, CenterY = 0.5 };
+            MainImage.RenderTransform = new RotateTransform() { Angle = 90, CenterX = 480/2, CenterY = 480/2};
             pumpARGBFrames = true; 
             ARGBFramesThread = new System.Threading.Thread(PumpARGBFrames); 
  
             wb = new WriteableBitmap((int)cam.PreviewResolution.Width, (int)cam.PreviewResolution.Height);
-            this.MainImage.Source = wb; 
- 
+            this.MainImage.Source = wb;
+
+            Size res = cam.PreviewResolution;
+
+
             // Start pump. 
             ARGBFramesThread.Start(); 
             this.Dispatcher.BeginInvoke(delegate() 
@@ -559,7 +576,31 @@ namespace WIPSA_GPS
             { 
                 txtDebug.Text = ""; 
             }); 
-        } 
+        }
+
+        private void OnFrameReported(object sender, TouchFrameEventArgs e)
+        {
+
+            //add in pop up window that prompts for 4 corner press
+
+            TouchPoint point_t = e.GetPrimaryTouchPoint(null);
+            double X = point_t.Position.X;
+            double Y = point_t.Position.Y;
+
+            coord_array[count / 2, 0] = X;
+            coord_array[count / 2, 1] = Y;
+            count++;
+
+            if (count == 8)
+            {
+                //to-do: recalibrate/redraw button
+                count = 0;
+                //head to another function
+            }
+                
+
+        }
+
     }
 
 

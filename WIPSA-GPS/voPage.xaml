@@ -18,10 +18,10 @@
         
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0">
             <!--Overlay for the viewfinder region to display grayscale WriteableBitmap objects-->
-            <Image x:Name="MainImage" Width="200" Height="200" Margin="16,0,0,16" Stretch="Uniform" Canvas.ZIndex="2" />
+            
 
 
-            <!--<Rectangle Width="640" Height="480" Canvas.ZIndex="1">
+            <Rectangle Width="480" Height="1000" Canvas.ZIndex="1" Visibility="Collapsed">
                 <Rectangle.Fill>
                     <VideoBrush x:Name="viewfinderBrush" />
                 </Rectangle.Fill>
@@ -31,7 +31,7 @@
                     <RotateTransform Angle="90" CenterX="240" CenterY="240"></RotateTransform>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            -->
+            
             
             <!--Button StackPanel to the right of viewfinder>-->
             <!--<StackPanel Grid.Column="1" >
@@ -50,6 +50,9 @@
                 Name="GrayscaleOffButton"   
                 Canvas.ZIndex="3"
                 Click="GrayOff_Clicked" />
+                
+                <Image x:Name="MainImage" Width="800" Height="800" Stretch="none" Canvas.ZIndex="2" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                
             </StackPanel>
 
             <Canvas Name="TextBoxCanvas" Background="#BB000000" Canvas.ZIndex="99" Visibility="Collapsed">
