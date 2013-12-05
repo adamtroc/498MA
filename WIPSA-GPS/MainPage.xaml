@@ -8,13 +8,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
-    Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="True" Foreground="#FF3355C9">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="#FF0D1A53">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -22,16 +21,18 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="WIPSA start" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="3rd &amp; Long" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="#FFEA9A27"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Button x:Name="locateStadiumButton" Content="Locate Stadium" HorizontalAlignment="Center" Margin="0,167,0,0" VerticalAlignment="Top" Click="lsButton_Click"/>
-            <Button x:Name="videoOverlayButton" Content="Video overlay" HorizontalAlignment="Center" Margin="0,262,0,0" VerticalAlignment="Top" Click="voButton_Click"/>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="14,10,10,-10" Background="#FF0D1A53">
+            <Button x:Name="locateStadiumButton" Content="Locate Stadium" HorizontalAlignment="Center" Margin="0,154,247,0" VerticalAlignment="Top" Click="lsButton_Click" Background="#FFC37414" Height="72"/>
+            <Button x:Name="videoOverlayButton" Content="Overlay Field" HorizontalAlignment="Center" Margin="255,154,0,0" VerticalAlignment="Top" Click="voButton_Click" Background="#FFC37414" Height="72" Width="201"/>
+            <Image Margin="255,15,10,480" Source="/Image1.png" Stretch="Fill"/>
+            <Image Margin="0,15,247,480" Source="/Image2.png" Stretch="Fill"/>
 
         </Grid>
+        <TextBlock Text="An Augmented Reality Sports App." Style="{StaticResource PhoneTextNormalStyle}" Margin="26,106,10,1" Foreground="#FFD08F32"/>
     </Grid>
 
 </phone:PhoneApplicationPage>
